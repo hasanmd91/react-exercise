@@ -1,11 +1,10 @@
 import React from "react";
 
-import Getpost2 from "./components/Usereducer/Getpost2";
+import Uselibrary from "./components/Usereducer/UseReducertutorial37";
 
 export default function App(){
-    return(
+    return( <Uselibrary />
 
-
-        <Getpost2 />
+        
     )
 }
