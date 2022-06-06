@@ -29,8 +29,10 @@ const reducer = (state, action ) =>{
             modaltext: "book is added",
         }
     };
-    if(action.type === "Remove"){
-        const filteredbooks = [...state.books].filter((book)=>book.id ===! action.payload)
+    if(action.type === "REMOVE"){
+        console.log([...state.books])
+        const filteredbooks = [...state.books].filter((book)=>book.id !== action.payload)
+        console.log()
         return{
             ...state,
             books : filteredbooks,
@@ -52,7 +54,10 @@ const handelsumit = (e) => {
     const newbook = { id: new Date().getTime().toString(), name: bookName} // adding newbook object 
     dispatch({ type: "ADD", payload: newbook})
     setbookName("")
+}
 
+const removeBook =(id)=> {
+    dispatch({type:"REMOVE", payload: id })
 }
   return (
     <div>   
@@ -65,7 +70,7 @@ const handelsumit = (e) => {
         <div>
         {bookState.books.map((book)=>{
             const { id, name} = book;
-        return <li key={id}>{name} <button onClick={()=>{removehandeler}}}> Remove</button> </li>
+        return <li key={id}>{name} <button onClick={()=>removeBook(id)}> Remove</button> </li>
         }
          )}
         </div>
