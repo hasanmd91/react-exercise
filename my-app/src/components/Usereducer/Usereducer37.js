@@ -65,7 +65,7 @@ const handelsumit = (e) => {
         <div>
         {bookState.books.map((book)=>{
             const { id, name} = book;
-        return <li key={id}>{name} <button onClick={}> Remove</button> </li>
+        return <li key={id}>{name} <button onClick={()=>{removehandeler}}}> Remove</button> </li>
         }
          )}
         </div>
