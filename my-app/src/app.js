@@ -1,11 +1,25 @@
 import React from "react";
-import Component1 from "./components/useContext/Component1";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import Usereducer37 from "./components/Usereducer/Usereducer37";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
 
 export default function App(){
-    return( <Component1 />
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/home" element={<Home />}/>
+                <Route path="/blogs" element={<Blogs />}/>
+                <Route path="/contact" element={<Contact />}/>
+                <Route path="*" element ={<Error />} />
 
-        
+            </Routes>
+        </BrowserRouter>
     )
 }

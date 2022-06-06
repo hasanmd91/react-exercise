@@ -1,8 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { userContext } from './UserContext'
-
-
+import { userContext } from './UserContext';
 
 const Component4 = () => {
   const {user, text} = useContext(userContext);
