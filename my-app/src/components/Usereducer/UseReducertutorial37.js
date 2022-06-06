@@ -29,6 +29,10 @@ const Uselibrary= () => {
        });
        setModelIsOpen(true);
        setModalText("new book added")
+       setBookName("")
+       setTimeout(() => {
+       setModelIsOpen(false);
+       }, 3000);
     }
 
   return (
@@ -50,3 +54,6 @@ const Uselibrary= () => {
 }
 
 export default Uselibrary
+
+//this is a demonstration how to change multipul state using useState Hook. In the second part i will demonstrate
+// how to change multipul state using useReducer 
