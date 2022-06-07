@@ -6,6 +6,7 @@ import Blogs from "./pages/Blogs";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import User from "./pages/User";
 import { Navbar } from "./pages/Navbar";
 import "./app.css";
 
@@ -19,6 +20,8 @@ export default function App(){
                 <Route path="/blogs/:title" element ={<Blog />} />
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="*" element ={<Error />} />
+                <Route path="/user/:userid" element= {<User />} />
+
 
             </Routes>
         </BrowserRouter>

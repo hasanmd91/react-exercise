@@ -7,5 +7,6 @@ export const Navbar = () => {
     <NavLink to="/home" className='nav-link'>Home</NavLink>
     <NavLink to ="/contact" className='nav-link' > Contact</NavLink>
     <NavLink to = "/blogs" className='nav-link' > Blogs </NavLink>
+    <NavLink to ="/user " className= "nav-link "> user </NavLink>
   </nav>
 }

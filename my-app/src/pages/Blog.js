@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-
-import { Data } from "./Blogsdata"
 import { useParams, useNavigate, useLocation} from 'react-router-dom'
 
 const Blog = () => {
   const navigate = useNavigate();
-  const {title} = useParams();
+  // const {title} = useParams();
   const location = useLocation();
 
   // const [bodyData, setbodyData] = useState("");
