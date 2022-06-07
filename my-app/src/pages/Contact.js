@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Contact = () => {
+  const Navigate = useNavigate()
   return (
     <div>  
     <h1>Contact</h1>
@@ -33,7 +36,9 @@ const Contact = () => {
        sadipscing rebum. At ea eos ut sit at. Labore sadipscing et sed clita ipsum, eirmod clita amet takimata
         no no lorem. Invidunt amet ea eos et justo duo et. Erat ipsum dolor sea kasd amet magna dolore vero 
         rebum. Elitr sea dolore ea ipsum tempor est.</p>
+        <button onClick={()=> Navigate("/home") }> Go to home page  </button>
     </div>
+
   )
 }
 

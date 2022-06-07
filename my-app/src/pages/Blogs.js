@@ -3,7 +3,7 @@ import React from 'react'
 const Blogs = () => {
   return (
     <div>  <h1>Blogs</h1>
-    <p> But bird shadows is or this that door from beak pallid. Of chamber beak on 
+    <p> this is blogs But bird shadows is or this that door from beak pallid. Of chamber beak on 
       implore. My stock fast i token shall nights its. As louder once whose she angels ghastly seat the now.
        Still this word word lost only.Sit justo sit et sea sea et stet dolore invidunt, amet tempor takimata 
        labore eirmod est stet ea sadipscing sit, vero accusam sit diam elitr amet, dolore voluptua gubergren 
