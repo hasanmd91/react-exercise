@@ -2,23 +2,25 @@ import React, { useEffect, useState } from 'react'
 
 
 import { Data } from "./Blogsdata"
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useLocation} from 'react-router-dom'
 
 const Blog = () => {
-  const navigate = useNavigate()
-  const {title} = useParams()
-  const [bodyData, setbodyData] = useState("")
+  const navigate = useNavigate();
+  const {title} = useParams();
+  const location = useLocation();
 
-  useEffect( () => {
-    const NewBodyData = Data.filter((blog)=> { return blog.title === title });
-    setbodyData( NewBodyData[0].body)
+  // const [bodyData, setbodyData] = useState("");
 
-  },[])
+  // useEffect( () => {
+  //   const NewBodyData = Data.filter((blog)=> { return blog.title === title });
+  //   setbodyData( NewBodyData[0].body)
+
+  // },[])
 
   return (
     <div>
-      <h1> {title} </h1>
-      <p>{bodyData} </p>
+      <h1> {location.state.title} </h1>
+      <p>{location.state.body} </p>
       <button onClick={()=>navigate("/blogs") }>Go to blogs </button>
     </div>
   )
