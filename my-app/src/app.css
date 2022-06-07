@@ -21,3 +21,27 @@ font-size: large;
 nav .active{
   color: red;
 }
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+article { 
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px){
+  section {
+    grid-template-columns: auto auto;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  section  {
+    grid-template-columns: auto auto auto;
+  }
+  
+}
