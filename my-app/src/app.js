@@ -11,19 +11,20 @@ import { Navbar } from "./pages/Navbar";
 import "./app.css";
 
 export default function App(){
-    return (
+    return (<> 
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/home" element={<Home />}/>
+                <Route path="/" element={<Home />}/>
                 <Route path="/blogs" element={<Blogs />}/>
                 <Route path="/blogs/:title" element ={<Blog />} />
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="*" element ={<Error />} />
                 <Route path="/user/:userid" element= {<User />} />
-
-
             </Routes>
         </BrowserRouter>
+
+
+        </>
     )
 }
