@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 nav {
   height: 8vh;
   background-color: rgb(22, 22, 21);
@@ -6,19 +9,18 @@ nav {
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   color: white;
   margin: 1rem;
   text-decoration: none;
-font-size: large;
-  
+  font-size: large;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: orange;
 }
 
-nav .active{
+nav .active {
   color: red;
 }
 
@@ -27,21 +29,61 @@ section {
   grid-gap: 1rem;
 }
 
-article { 
-  background-color: aliceblue;
+article {
+  background-color: rgb(127, 20, 127);
   padding: 1rem;
 }
 
-@media screen and (min-width: 600px){
+.usercard {
+  margin: 1rem;
+  width: 500px;
+  text-align: center;
+}
+
+button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button:hover {
+  font-size: large;
+  background-color: gray;
+}
+
+button:active {
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) {
   section {
     grid-template-columns: auto auto;
   }
-  
 }
 
 @media screen and (min-width: 992px) {
-  section  {
+  section {
     grid-template-columns: auto auto auto;
   }
-  
+}
+
+.usefield {
+  width: 100px;
+  height: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

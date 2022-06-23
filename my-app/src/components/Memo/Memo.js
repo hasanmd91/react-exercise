@@ -11,7 +11,7 @@ const Memo  = () => {
     <div> 
       <p> count: {count}</p>
       <button onClick={()=> setcount((count) => count +1) }> increment + </button>
-      <Message  numberofmessage={0} />
+      <Message  numberofmessage={count} />
     </div>
   )
 }
